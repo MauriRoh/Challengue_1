@@ -21,50 +21,58 @@
 <body>
      <!-- Grid row -->
      <div class="container">
-          <br>
-          <div class="row g-2">
-               
-               <h1 class="text">Challengue N° 1</h1>
+          <div class="card-center">
+          
+               <div class="card">
+                    <div class="card-header">
+                         <h1 align="center">Challengue N° 1</h1>
+                    </div>
 
-               <!-- Grid column -->
-               <div class="col-md">
+                    <div class="row">
+                         <div class="col-sm-6">
+                              <div class="card">
+                                   <div class="card-body">
 
-                    <form id="frmEncrypt" class="form-floating">
+                                        <form id="frmEncrypt" class="form-floating">
 
-                         <div>
-                              <p class="h4 mb-4">Encriptar | Desencriptar</p>
-                              <input id="textEncriptado" name="textEncriptado" type="text" onkeypress="return onlyLetter(event)" placeholder="Enter Text"
-                                   class="form-control mb-4">
+                                             <div>
+                                                  <p class="h4 mb-4">Encriptar | Desencriptar</p>
+                                                  <input id="textEncriptado" name="textEncriptado" type="text" onkeypress="return onlyLetter(event)" placeholder="Enter Text"
+                                                       class="form-control mb-4">       
+                                             </div>
 
-                                   
+                                             <button id="btnEncrypt" class="btn btn-primary">Convertir</button>
+                                        </form>
+
+                                   </div>
+                              </div>
+                         </div>
+                              <!-- Grid column -->
+
+                         <div class="col-sm-6">
+                              <div class="card">
+                                   <div class="card-body">
+
+                                        <div>
+                                             <p class="h4 mb-4" id="endText">Texto</p>
+                                             <input id="endEncriptado" name="endEncriptado" type="text" onkeypress="return onlyLetter(event)" class="form-control mb-4">
+                                        </div>
+
+                                        <button id="btnCopy" class="btn btn-primary" onclick="copyTextInput()">Copiar y
+                                             Pegar Frase
+                                        </button>
+                                   </div>
+                              </div>
                          </div>
 
-                         <button id="btnEncrypt" class="btn btn-primary">Convertir</button>
-                    </form>
-
-               </div>
-               <!-- Grid column -->
-
-               <!-- Grid column -->
-               <div class="col-md">
-
-                    <div class="form-floating">
-
-                         <div>
-                              <p class="h4 mb-4" id="endText">Texto</p>
-                              <input id="endEncriptado" name="endEncriptado" type="text" onkeypress="return onlyLetter(event)" class="form-control mb-4">
+                         <div class="card-footer" align="center">
+                              <button id="btnCopy" class="btn btn-primary" onclick="cleanInput()">Limpiar Campos</button>
                          </div>
-
-                         <button id="btnCopy" class="btn btn-primary" onclick="copyTextInput()">Copiar y
-                              Pegar Frase</button>
+                         
                     </div>
 
                </div>
-               <!-- Grid column -->
-               <button id="btnCopy" class="btn btn-primary" onclick="cleanInput()">Limpiar Campos</button>
-          
-          </form>
-          
+          </div>
      </div>
 
           <script src="js/myjs.js">></script>
