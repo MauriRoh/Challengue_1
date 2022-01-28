@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+     <!-- Google Fonts Roboto -->
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+     <!-- MDB -->
+     <link rel="stylesheet" href="bootstrap/css/mdb.min.css" />
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <title>Challengue 1</title>
+     <script src="js/validacion.js">></script>
+</head>
+
+<body>
+     <!-- Grid row -->
+     <div class="container">
+          <br>
+          <div class="row g-2">
+               
+               <h1 class="text">Challengue N° 1</h1>
+
+               <!-- Grid column -->
+               <div class="col-md">
+
+                    <form id="frmEncrypt" class="form-floating">
+
+                         <div>
+                              <p class="h4 mb-4">Encriptar | Desencriptar</p>
+                              <input id="textEncriptado" name="textEncriptado" type="text" onkeypress="return onlyLetter(event)" placeholder="Enter Text"
+                                   class="form-control mb-4">
+
+                                   
+                         </div>
+
+                         <button id="btnEncrypt" class="btn btn-primary">Convertir</button>
+                    </form>
+
+               </div>
+               <!-- Grid column -->
+
+               <!-- Grid column -->
+               <div class="col-md">
+
+                    <div class="form-floating">
+
+                         <div>
+                              <p class="h4 mb-4" id="endText">Texto</p>
+                              <input id="endEncriptado" name="endEncriptado" type="text" onkeypress="return onlyLetter(event)" class="form-control mb-4">
+                         </div>
+
+                         <button id="btnCopy" class="btn btn-primary" onclick="copyTextInput()">Copiar y
+                              Pegar Frase</button>
+                    </div>
+
+               </div>
+               <!-- Grid column -->
+               <button id="btnCopy" class="btn btn-primary" onclick="cleanInput()">Limpiar Campos</button>
+          
+          </form>
+          
+     </div>
+
+          <script src="js/myjs.js">></script>
+
+</body>
+
+</html>
+
+
+   
